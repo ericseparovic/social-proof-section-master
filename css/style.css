@@ -1,0 +1,228 @@
+/*Colores*/
+/*Typography*/
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Spartan", sans-serif;
+  background-color: white;
+  background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+  background-size: 30%, 70%;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  height: 40rem;
+}
+.header .header__title {
+  flex: 1;
+  padding-right: 15rem;
+}
+.header .header__title h1 {
+  font-size: 5rem;
+  margin-bottom: 0px;
+  margin-top: 0;
+  color: #502050;
+}
+.header .header__title p {
+  font-size: 1.8rem;
+  margin-top: 0.8rem;
+  color: #937b92;
+}
+
+.header__reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+  height: 25rem;
+}
+.header__reviews .header__review {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 1rem;
+  padding: 2rem;
+  align-items: center;
+  background-color: #f7f2f7;
+}
+.header__reviews .header__review:nth-child(1) {
+  margin-right: 10rem;
+}
+.header__reviews .header__review:nth-child(2) {
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+.header__reviews .header__review:nth-child(3) {
+  margin-left: 10rem;
+}
+.header__reviews .header__review p {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+}
+
+.header__comments {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.header__comments .header__comment {
+  height: 30rem;
+  background-color: #502050;
+  padding: 4rem;
+  border-radius: 1.5rem;
+  flex-basis: 30%;
+}
+.header__comments .header__comment:nth-child(2) {
+  margin-top: 5rem;
+}
+.header__comments .header__comment:nth-child(3) {
+  margin-top: 10rem;
+}
+.header__comments p {
+  color: white;
+}
+
+.header__image__name {
+  display: flex;
+  height: 5rem;
+  align-items: center;
+}
+.header__image__name img {
+  border-radius: 50%;
+  width: 6rem;
+  margin-right: 3rem;
+}
+.header__image__name h3 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0.6rem;
+  color: white;
+}
+.header__image__name p {
+  padding: 0;
+  margin: 0;
+  color: #ee68a4;
+}
+
+.header__description {
+  margin-top: 5rem;
+}
+
+@media (max-width: 1200px) {
+  .header .header__title {
+    padding-right: 0rem;
+  }
+  .header .header__title h1 {
+    font-size: 5rem;
+  }
+  .header .header__title p {
+    font-size: 1.4rem;
+  }
+
+  .header__review p {
+    font-size: 1.2rem;
+  }
+
+  .header__comments {
+    flex-direction: column;
+  }
+  .header__comments .header__comment:nth-child(2) {
+    margin-top: 5rem;
+  }
+  .header__comments .header__comment:nth-child(3) {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 1000px) {
+  .main {
+    padding: 8rem;
+  }
+
+  .header {
+    display: flex;
+    flex-flow: column nowrap;
+    height: auto;
+    padding-top: 5rem;
+    text-align: center;
+    padding-top: 0;
+  }
+  .header .header__reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 4rem;
+    margin-top: 5rem;
+  }
+  .header .header__reviews .header__review {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 1rem;
+    padding: 2rem;
+    align-items: center;
+    background-color: #f7f2f7;
+    margin-bottom: 2rem;
+  }
+  .header .header__reviews .header__review:nth-child(1) {
+    margin-right: 0rem;
+  }
+  .header .header__reviews .header__review:nth-child(2) {
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+  .header .header__reviews .header__review:nth-child(3) {
+    margin-left: 0rem;
+  }
+  .header .header__reviews .header__review p {
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+  }
+}
+@media (max-width: 698px) {
+  .main {
+    padding: 2rem;
+  }
+
+  .header {
+    padding-top: 3rem;
+  }
+  .header .header__title h1 {
+    font-size: 4.5rem;
+  }
+  .header .header__review {
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .header .header__review .header__star {
+    padding-bottom: 0.8rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
