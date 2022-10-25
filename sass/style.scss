@@ -6,6 +6,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+
 *,
 *:before,
 *:after {
@@ -18,8 +19,8 @@ body {
   font-size: $font-size;
   font-family: $family-spartan;
   background-color: $white;
-  background-image: url(/images/bg-pattern-top-desktop.svg),
-    url(/images/bg-pattern-bottom-desktop.svg);
+  background-image: url(images/bg-pattern-top-desktop.svg),
+    url(images/bg-pattern-bottom-desktop.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: top left, bottom right;
   background-size: 30%, 70%;
@@ -188,6 +189,7 @@ body {
   .main {
     padding: 8rem;
   }
+
   .header {
     display: flex;
     flex-flow: column nowrap;
@@ -203,6 +205,7 @@ body {
       width: 100%;
       padding-bottom: 4rem;
       margin-top: 5rem;
+
       .header__review {
         display: flex;
         justify-content: space-around;
@@ -236,11 +239,13 @@ body {
 }
 
 @media (max-width: 698px) {
- .main {
+  .main {
     padding: 2rem;
   }
+
   .header {
-      padding-top: 3rem;
+    padding-top: 3rem;
+
     .header__title {
       h1 {
         font-size: 4.5rem;
@@ -254,7 +259,7 @@ body {
 
       .header__star {
         padding-bottom: .8rem;
-    }
+      }
     }
   }
 

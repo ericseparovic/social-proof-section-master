@@ -18,8 +18,8 @@ html {
 body {
   font-size: 15px;
   font-family: "Spartan", sans-serif;
-  background-color: white;
-  background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+  background-color: hsl(0deg, 0%, 100%);
+  background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: top left, bottom right;
   background-size: 30%, 70%;
@@ -45,12 +45,12 @@ body {
   font-size: 5rem;
   margin-bottom: 0px;
   margin-top: 0;
-  color: #502050;
+  color: hsl(300deg, 43%, 22%);
 }
 .header .header__title p {
   font-size: 1.8rem;
   margin-top: 0.8rem;
-  color: #937b92;
+  color: hsl(303deg, 10%, 53%);
 }
 
 .header__reviews {
@@ -66,7 +66,7 @@ body {
   border-radius: 1rem;
   padding: 2rem;
   align-items: center;
-  background-color: #f7f2f7;
+  background-color: hsl(300deg, 24%, 96%);
 }
 .header__reviews .header__review:nth-child(1) {
   margin-right: 10rem;
@@ -92,7 +92,7 @@ body {
 }
 .header__comments .header__comment {
   height: 30rem;
-  background-color: #502050;
+  background-color: hsl(300deg, 43%, 22%);
   padding: 4rem;
   border-radius: 1.5rem;
   flex-basis: 30%;
@@ -121,12 +121,12 @@ body {
   padding: 0;
   margin: 0;
   margin-bottom: 0.6rem;
-  color: white;
+  color: hsl(0deg, 0%, 100%);
 }
 .header__image__name p {
   padding: 0;
   margin: 0;
-  color: #ee68a4;
+  color: hsl(333deg, 80%, 67%);
 }
 
 .header__description {
@@ -143,11 +143,9 @@ body {
   .header .header__title p {
     font-size: 1.4rem;
   }
-
   .header__review p {
     font-size: 1.2rem;
   }
-
   .header__comments {
     flex-direction: column;
   }
@@ -162,7 +160,6 @@ body {
   .main {
     padding: 8rem;
   }
-
   .header {
     display: flex;
     flex-flow: column nowrap;
@@ -185,7 +182,7 @@ body {
     border-radius: 1rem;
     padding: 2rem;
     align-items: center;
-    background-color: #f7f2f7;
+    background-color: hsl(300deg, 24%, 96%);
     margin-bottom: 2rem;
   }
   .header .header__reviews .header__review:nth-child(1) {
@@ -208,7 +205,6 @@ body {
   .main {
     padding: 2rem;
   }
-
   .header {
     padding-top: 3rem;
   }
